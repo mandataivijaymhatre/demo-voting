@@ -133,7 +133,7 @@ const ElectionInterface = () => {
                 <td style={{ fontSize: "8px", padding: '0px' }}>
                   {index === 1 && (
 
-                    <div className="d-flex flex-row align-items-center">
+                    <div className="d-flex flex-row align-items-center justify-content-between">
                       {/* Name and Details Container */}
                       <div className="text-center" style={{ width: '85px' }}>
                         <p style={{ fontSize: '11px', fontWeight: '600', marginBottom: '0px', width: '83px' }}>
