@@ -96,7 +96,7 @@ const ElectionInterface = () => {
 
       </p>
 
-      <div className="text-center mb-3 d-flex">
+      <div className="text-center mb-3 d-flex justify-content-center">
         <button className="btn btn-warning btn-sm mx-1 text-white p-1" style={{ background: '#ff6634', fontSize: '10px', fontWeight: '800', padding: '0px' }}>
           मतदानाच्या दिवशी कमळ चिन्हा समोरिल बटन दाबा
         </button>
