@@ -154,7 +154,7 @@ const ElectionInterface = () => {
 
                   )}
                 </td>
-                <td style={{ width: '40px', padding: '2px' }}>
+                <td style={{ width: '40px', padding: '0px 2px' }}>
                   {index === 1 && (
                     <img
                       src={candidates[0].symbol}
@@ -172,7 +172,7 @@ const ElectionInterface = () => {
                     style={{ width: "20px" }}
                   />
                 </td>
-                <td style={{ padding: '0px' }}>
+                <td style={{ padding: '0px' ,paddingBottom:'4px' }}>
                   <button
                     style={{
                       fontSize: '8px',
@@ -183,7 +183,7 @@ const ElectionInterface = () => {
                       padding: '0px',
                       boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)', // Adds a shadow effect
                     }}
-                    className="btn btn-primary btn-sm mb-1" // Adds bottom margin using Bootstrap class
+                    className="btn btn-primary btn-sm " // Adds bottom margin using Bootstrap class
                     onClick={() => handleButtonClick(index, candidates[0])}
                   >
                     {index === 1 ? 'बटण दाबा' : ''}
