@@ -133,10 +133,10 @@ const ElectionInterface = () => {
                 <td style={{ fontSize: "8px", padding: '0px' }}>
                   {index === 1 && (
 
-                    <div className="d-flex flex-row align-items-center justify-content-between">
+                    <div className="d-flex flex-row align-items-center justify-content-around">
                       {/* Name and Details Container */}
-                      <div className="text-center" style={{ width: '85px' }}>
-                        <p style={{ fontSize: '11px', fontWeight: '600', marginBottom: '0px', width: '83px' }}>
+                      <div className="text-center">
+                        <p style={{ fontSize: '11px', fontWeight: '600', marginBottom: '0px' }}>
                           {candidates[0].nameMarathi}
                         </p>
                         <p style={{ marginBottom: '0px', width: '83px' }}>
@@ -162,7 +162,7 @@ const ElectionInterface = () => {
                   )}
                 </td>
 
-                <td style={{ width: '40px', padding: '0px' }}>
+                <td style={{ width: '40px', padding: '2px' }}>
                   {index === 1 && (
                     <img
                       src={candidates[0].symbol}
@@ -202,7 +202,7 @@ const ElectionInterface = () => {
             ))}
           </tbody>
         </table>
-        <p style={{ fontSize: '5px' }}>अस्वीकरण: ही एक शैक्षणिक व प्रमोशनल वेबसाइट आहे, आणि याचा वास्तविक मतदानाशी काहीही संबंध नाही. माहितीपूर्ण उद्देशासाठी कृपया याचा वापर करा.</p>
+        <p style={{ fontSize: '8px' }}>अस्वीकरण: ही एक शैक्षणिक व प्रमोशनल वेबसाइट आहे, आणि याचा वास्तविक मतदानाशी काहीही संबंध नाही. माहितीपूर्ण उद्देशासाठी कृपया याचा वापर करा.</p>
       </div>
       {/* Modal */}
       {showModal && selectedCandidate && (
