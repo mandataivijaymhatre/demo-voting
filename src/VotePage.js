@@ -19,7 +19,6 @@ const ElectionInterface = () => {
       audio.play();
     }
   };
-
   const handleButtonClick = (index, candidate) => {
     if (index == 1) {
       setUrl('https://digibitsearch.com/ganeshnaik/demo-voting/assets/bulbred.png')
@@ -37,27 +36,24 @@ const ElectionInterface = () => {
       setTimeout(() => {
         const audio = new Audio('WhatsApp Audio 2024-11-17 at 12.03.04 AM (online-audio-converter.com).mp3');
         audio.play();
-      
+
         setShowModal(true);
 
       }, 1300)
-
       setTimeout(() => {
         setShowModal(false);
         setUrl('https://digibitsearch.com/ganeshnaik/demo-voting/assets/bulb.png')
-      }, 4000)
+      }, 5000)
     }
   };
   const handleShareClick = () => {
     const url = window.location.href; // Get the current page URL
     const message = "Check out the election interface!"; // Message to be shared
-
     // Social media sharing URLs
     const shareUrl = {
       whatsapp: `https://wa.me/?text=${encodeURIComponent(message)} ${encodeURIComponent(url)}`,
       facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
       twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}&url=${encodeURIComponent(url)}`,
-
     };
     // Open the social media share links in new windows
     window.open(shareUrl.whatsapp, "_blank", "width=600,height=400");
@@ -65,7 +61,6 @@ const ElectionInterface = () => {
     window.open(shareUrl.twitter, "_blank", "width=600,height=400");
 
   };
-
   const candidates = [
     {
       name: "Manda Vijay Mhatre", // English name
@@ -76,11 +71,10 @@ const ElectionInterface = () => {
     },
     // Add more candidates here
   ];
-
   return (
     <div className="my-2">
       {/* Header Section */}
-      <h5 className="text-center" style={{ padding: '0px', fontSize: '12px', marginBottom: '0px' }}>150 बेलापूर विधानसभा मतदारसंघ</h5>
+      <h5 className="text-center" style={{ padding: '0px', fontSize: '12px', marginBottom: '0px' }}>151 बेलापूर विधानसभा मतदारसंघ</h5>
       <p className="text-center">
         <button
           className="btn btn-primary btn-sm mx-2 text-white rounded"
@@ -95,7 +89,6 @@ const ElectionInterface = () => {
         </button>
 
       </p>
-
       <div className="text-center mb-3 d-flex justify-content-center">
         <button className="btn btn-warning btn-sm mx-1 text-white p-1" style={{ background: '#ff6634', fontSize: '10px', fontWeight: '800', padding: '0px' }}>
           मतदानाच्या दिवशी कमळ चिन्हा समोरिल बटन दाबा
@@ -108,7 +101,6 @@ const ElectionInterface = () => {
           <FaWhatsapp className="me-2" /> SHARE
         </Button>
       </div>
-
       {/* Voting Table */}
       <div className="table-responsive" style={{ margin: '5PX' }}>
         <table className="table table-bordered text-center align-middle"
@@ -131,6 +123,7 @@ const ElectionInterface = () => {
               <tr key={index}>
                 <td style={{ fontSize: "10px", padding: '0px', margin: '0px' }}>{index + 1}</td>
                 <td style={{ fontSize: "8px", padding: '0px' }}>
+                
                   {index === 1 && (
 
                     <div className="d-flex flex-row align-items-center justify-content-around">
@@ -161,7 +154,6 @@ const ElectionInterface = () => {
 
                   )}
                 </td>
-
                 <td style={{ width: '40px', padding: '2px' }}>
                   {index === 1 && (
                     <img
@@ -228,9 +220,9 @@ const ElectionInterface = () => {
               }}
             >
 
-              <h5 className=" fs-5 text-center text-white mt-3 fw-bold" style={{ fontFamily: 'serif'}} >वी.वी.पॅट / VVPAT</h5>
+              <h5 className=" fs-5 text-center text-white mt-3 fw-bold" style={{ fontFamily: 'serif' }} >वी.वी.पॅट / VVPAT</h5>
 
-              <div className="modal-body text-start py-5 px-3"  style={{border:'1px solid #616161'}}>
+              <div className="modal-body text-start py-5 px-3" style={{ border: '1px solid #616161' }}>
                 <div className='bg-white d-flex justify-content-center items-align-center' style={{
                   height: '250px',
                   transition: "transform 0.5s ease-out", // Smooth slide-in effect
@@ -267,16 +259,14 @@ const ElectionInterface = () => {
                     />
                   </div>
                 </div>
-               
+
               </div>
-              <h3 className="text-white p-1" style={{ fontSize: '12px', zIndex:100 }}>कृपया स्लिपची पडताळणी करा / Please verify slip <br></br> मतदानाच्या दिवशी सुद्धा "कमळ" चिन्हा <br></br>समोरील बटण दाबावे</h3>
+              <h3 className="text-white p-1" style={{ fontSize: '12px', zIndex: 100 }}>कृपया स्लिपची पडताळणी करा / Please verify slip <br></br> मतदानाच्या दिवशी सुद्धा "कमळ" चिन्हा <br></br>समोरील बटण दाबावे</h3>
             </div>
           </div>
         </div>
       )}
-
     </div>
   );
 };
-
 export default ElectionInterface;
