@@ -85,13 +85,13 @@ const ElectionInterface = () => {
             boxShadow: '0 5px 10px rgba(0, 0, 0, 0.3)',// Adds a subtle shadow
           }}
         >
-          डेमो मतदानासाठी कमळ चिन्ह समोरिल बटन दाबा
+          डेमो मतदानासाठी कमळ चिन्हा समोरील बटन दाबा
         </button>
 
       </p>
       <div className="text-center mb-3 d-flex justify-content-center">
         <button className="btn btn-warning btn-sm mx-1 text-white p-1" style={{ background: '#ff6634', fontSize: '10px', fontWeight: '800', padding: '0px' }}>
-          मतदानाच्या दिवशी कमळ चिन्हा समोरिल बटन दाबा
+          मतदानाच्या दिवशी कमळ चिन्हा समोरील बटन दाबा
         </button>
         <Button
           className="btn btn-success btn-sm mx-2 my-auto"
